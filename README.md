@@ -1,115 +1,72 @@
-# Swisstronik Tesnet Techinal Task 1
+# TokenWave
 
-link : [Click!](https://www.swisstronik.com/testnet2/dashboard)
+![TokenWave Logo](https://github.com/forestbg/TokenWave/blob/main/assets/logo.png)
 
-Feel free donate to my EVM address
+Selamat datang di **TokenWave**! 🚀
 
-EVM :
+TokenWave adalah platform inovatif yang memungkinkan Anda untuk membuat, mengelola, dan mendistribusikan token digital dengan mudah. Dengan antarmuka yang ramah pengguna dan fitur-fitur canggih, TokenWave siap membawa Anda ke dunia digital tokenisasi.
 
-```bash
-0x9902C3A98Df4b240ad5496cC26F89bAb8058f4aE
-```
+## Fitur Utama
 
-## Steps
+- 🌐 **Mudah Digunakan**: Antarmuka yang intuitif untuk memudahkan pembuatan dan pengelolaan token.
+- 🔒 **Keamanan Tinggi**: Implementasi standar keamanan terbaik untuk melindungi aset digital Anda.
+- ⚡ **Transaksi Cepat**: Proses transaksi yang cepat dan efisien.
+- 📊 **Analitik Mendalam**: Alat analitik canggih untuk melacak dan menganalisis performa token Anda.
+- 📱 **Responsif**: Aplikasi yang dapat diakses dari berbagai perangkat, baik desktop maupun mobile.
 
-### 1. Clone Repository
+## Memulai
 
-```bash
-git clone https://github.com/Mnuralim/hardhat-deploy-contract.git
-```
+Untuk memulai dengan TokenWave, ikuti langkah-langkah di bawah ini:
 
-```
-cd hardhat-deploy-contract
-```
+### Prasyarat
 
-### 2. Install Dependency
+Pastikan Anda memiliki:
 
-```bash
-npm install
-```
+- Node.js dan npm terinstal di komputer Anda.
+- Akun GitHub untuk meng-clone repository ini.
 
-### 3. Set .env File
+### Instalasi
 
-create .env file in root project
+1. **Clone repository ini**:
+    ```bash
+    git clone https://github.com/forestbg/TokenWave.git
+    cd TokenWave
+    ```
 
-```bash
-PRIVATE_KEY="your private key"
-```
+2. **Instal dependensi**:
+    ```bash
+    npm install
+    ```
 
-### 4. Create Smart Contract
+3. **Jalankan aplikasi**:
+    ```bash
+    npm start
+    ```
 
-- Open contract folder
-- Create Hello_swtr.sol file
-- Copy this code and paste there
+Aplikasi sekarang berjalan di `http://localhost:3000`. Buka di browser Anda untuk melihat TokenWave beraksi!
 
-```
-/// SPDX-License-Identifier: UNLICENSED
-pragma solidity ^0.8.19;
+## Kontribusi
 
-//This contract is only intended for testing purposes
+Kami sangat terbuka untuk kontribusi dari komunitas. Jika Anda ingin berkontribusi, silakan fork repository ini dan buat pull request dengan perubahan yang Anda usulkan. Pastikan untuk mengikuti panduan kontribusi kami.
 
-contract Swisstronik {
-    string private message;
+1. Fork repository ini
+2. Buat branch fitur baru (`git checkout -b fitur-anda`)
+3. Commit perubahan Anda (`git commit -m 'Menambahkan fitur yang hebat'`)
+4. Push ke branch (`git push origin fitur-anda`)
+5. Buat pull request
 
-    /**
-     * @dev Constructor is used to set the initial message for the contract
-     * @param _message the message to associate with the message variable.
-     */
-    constructor(string memory _message) payable{
-        message = _message;
-    }
+## Dokumentasi
 
-    /**
-     * @dev setMessage() updates the stored message in the contract
-     * @param _message the new message to replace the existing one
-     */
-    function setMessage(string memory _message) public {
-        message = _message;
-    }
+Dokumentasi lengkap tersedia di [Wiki TokenWave](https://github.com/forestbg/TokenWave/wiki).
 
-    /**
-     * @dev getMessage() retrieves the currently stored message in the contract
-     * @return The message associated with the contract
-     */
-    function getMessage() public view returns(string memory){
-        return message;
-    }
-}
-```
+## Dukungan
 
-### 5. Compile Smart Contract
+Jika Anda memiliki pertanyaan atau membutuhkan bantuan, jangan ragu untuk menghubungi kami melalui [Issues](https://github.com/forestbg/TokenWave/issues) atau email kami di support@tokenwave.com.
 
-```bash
-npm run compile
-```
+## Lisensi
 
-### 6. Deploy Smart Contract
+Proyek ini dilisensikan di bawah [MIT License](LICENSE).
 
-```bash
-npm run deploy
-```
+---
 
-### 7. Get Message
-
-```bash
-npm run get-message
-```
-
-### 8. Get Message
-
-```bash
-npm run set-message
-```
-
-### 9. Finsihed
-
-- Open the deployed-adddress.ts (location in utils folder)
-- Copy the address and paste the address in testnet dashboard
-- push this project to your github and paste your repository link in testnet dashboard
-
-by :
-github : [Mnuralim](https://github.com/Mnuralim)
-twitter : @Izzycracker04
-telegram : @fitriay19
-
-//0xf1f0C7Bf19ee4E196C0213cEE1002e9a5fadff62//
+Terima kasih telah menggunakan TokenWave! 🎉
